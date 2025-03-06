@@ -20,7 +20,7 @@ TANGGAL=$(date '+%Y-%m-%d')
 TIMES="10"
 NAMES=$(whoami)
 IMP="wget -q -O"    
-CHATID="1036440597"
+CHATID="@faizvpn"
 LOCAL_DATE="/usr/bin/"
 MYIP=$(wget -qO- ipinfo.io/ip)
 MYIP=$(curl -s ipinfo.io/ip )
@@ -379,7 +379,7 @@ print_ok "Selesai pemasangan modul tambahan"
 
 
 ########## SETUP FROM HERE ##########
-# ORIGINAL SCRIPT BY NEVERMORESSH   #
+# ORIGINAL SCRIPT BY VPS MAX   #
 #####################################
 echo "INSTALLING SCRIPT..."
 
@@ -387,10 +387,10 @@ touch /root/.install.log
 cat >/root/tmp <<-END
 #!/bin/bash
 #vps
-### NevermoreSSHTunnel $TANGGAL $MYIP
+### VPSMAX $TANGGAL $MYIP
 END
 ####
-NEVERMORESSH() {
+VPSMAX() {
     data=($(cat /root/tmp | grep -E "^### " | awk '{print $2}'))
     for user in "${data[@]}"; do
         exp=($(grep -E "^### $user" "/root/tmp" | awk '{print $3}'))
@@ -510,7 +510,7 @@ function finish(){
     # fi
 }
 cd /tmp
-NEVERMORESSH
+VPSMAX
 first_setup
 dir_xray
 add_domain

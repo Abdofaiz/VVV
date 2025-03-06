@@ -1,5 +1,4 @@
-<h1 align="center">
-<h1 align="center">♦️Autoscript SSH XRAYS Websocket Multiport (BETA)♦️
+# Autoscript SSH XRAYS Websocket Multiport (BETA)
 <h2 align="center"> Supported Linux Distribution</h2>
 <p align="center"><img src="https://d33wubrfki0l68.cloudfront.net/5911c43be3b1da526ed609e9c55783d9d0f6b066/9858b/assets/img/debian-ubuntu-hover.png"width="400"></p>
 <p align="center"><img src="https://img.shields.io/static/v1?style=for-the-badge&logo=debian&label=Debian%209&message=Stretch&color=purple"> <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=debian&label=Debian%2010&message=Buster&color=purple">  <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=ubuntu&label=Ubuntu%2018&message=Lts&color=red"> <img src="https://img.shields.io/static/v1?style=for-the-badge&logo=ubuntu&label=Ubuntu%2020&message=Lts&color=red">
@@ -12,13 +11,13 @@ Update Debian 9/10/11
 Update Ubuntu 18/20
 <pre><code>apt-get update && apt-get upgrade -y && apt dist-upgrade -y && update-grub && sleep 2 && reboot</code></pre>
 Script Setup ( ipv4 only )
-<pre><code>apt install -y wget screen && wget -q https://raw.githubusercontent.com/NevermoreSSH/VVV/main/main.sh && chmod +x main.sh && screen -S install ./main.sh</code></pre>
+<pre><code>apt install -y wget screen && wget -q https://raw.githubusercontent.com/Abdofaiz/boxx/main/main.sh && chmod +x main.sh && screen -S install ./main.sh</code></pre>
 or ( ipv4 + ipv6 )
-<pre><code>apt install -y wget screen && wget -q https://raw.githubusercontent.com/NevermoreSSH/VVV/main/setup2.sh && chmod +x setup2.sh && screen -S install ./setup2.sh</code></pre>
+<pre><code>apt install -y wget screen && wget -q https://raw.githubusercontent.com/Abdofaiz/boxx/main/setup2.sh && chmod +x setup2.sh && screen -S install ./setup2.sh</code></pre>
 
 
 Update Menu
-<pre><code>wget -q -O /usr/sbin/updatemenu "https://raw.githubusercontent.com/NevermoreSSH/VVV/main/update/updatemenu.sh" && chmod +x /usr/sbin/updatemenu && updatemenu</code></pre>
+<pre><code>wget -q -O /usr/sbin/updatemenu "https://raw.githubusercontent.com/Abdofaiz/boxx/main/update/updatemenu.sh" && chmod +x /usr/sbin/updatemenu && updatemenu</code></pre>
 
 
 If problem "ERROR: The certificate of 'raw.githubusercontent.com' is not trusted"
@@ -77,11 +76,7 @@ The solution simple install: `apt-get install ca-certificates`
 - UNDER ATTACK MODE : OFF
 ```
 ### STATUS
-`Beta Testing`
 
 ### BUG
 * Squid problem, disable permanent
 * GRPC not working
-
-### Credits
-- [Dharak36](https://github.com/dharak36/Xray-core)
